@@ -15,7 +15,12 @@ def split_train_test(data,test_ratio):
 
 train_data , test_data = split_train_test(housing,0.2)
 
+'''Saving Train and Test data for later use it will keep the order same'''
+# train_data.to_csv("train_data.csv",index=False)
+# test_data.to_csv("test_data.csv",index=False)
 
+# new_train_data = pd.read_csv("/content/train_data.csv")
+# new_test_data = pd.read_csv("/content/test_data.csv")
 
 ################################## Method 2 of Train Test Split #############################################
 # Splitting Train Test  with sklearn.model_selection.train_test_split
