@@ -1,7 +1,7 @@
 housing = pd.read_csv("/content/housing.csv")
 housing.head()
 
-################################ Method 1 of Split train test ################################################
+################################ Manual ::::::Method 1 of Split train test ################################################
 # Spliting Train Test data Manually with permutation method
 from numpy.random import permutation , seed
 
@@ -22,7 +22,7 @@ train_data , test_data = split_train_test(housing,0.2)
 # new_train_data = pd.read_csv("/content/train_data.csv")
 # new_test_data = pd.read_csv("/content/test_data.csv")
 
-################################## Method 2 of Train Test Split #############################################
+################################## By Using Algorithm :Method 2 of Train Test Split #############################################
 # Splitting Train Test  with sklearn.model_selection.train_test_split
 from sklearn.model_selection import train_test_split
 x_train , x_test , y_train , y_test = train_test_split(housing.drop("ocean_proximity",axis=1),housing["ocean_proximity"],test_size=0.2)
