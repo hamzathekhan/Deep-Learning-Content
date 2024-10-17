@@ -3,3 +3,4 @@ a) UnderSampling
 b) OverSampling (Blind Copy)
 c) OverSampling (SMOTE)
 d) Ensemble
+e) Focal Loss
