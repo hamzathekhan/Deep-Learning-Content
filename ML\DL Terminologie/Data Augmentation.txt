@@ -1,0 +1,2 @@
+The generation of new data from pre-existing data is called as data-augmentation e.g if original image is simple. you can generate
+rotated images , flips and much more this is called data augmentation
